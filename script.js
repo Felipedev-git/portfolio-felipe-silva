@@ -28,7 +28,7 @@ formulario.onsubmit = function(evento) {
         return false;
     }
 
-    // Verifica se o email é valido (precisa ter @ e ponto)
+    // Verifica se o email é valido
     if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
         alert("Por favor, digite um e-mail válido com @ e ponto.");
         return false;
