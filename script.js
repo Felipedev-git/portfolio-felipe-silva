@@ -1,4 +1,4 @@
-// Funcionalidade 1: Troca de tema claro/escuro
+// Troca de tema claro/escuro
 let botaoTema = document.getElementById('btn-tema');
 
 botaoTema.onclick = function() {
@@ -12,7 +12,7 @@ botaoTema.onclick = function() {
     }
 };
 
-// Funcionalidade 2: Validação do formulário de contato
+// Validação do formulário de contato
 let formulario = document.getElementById('form-contato');
 
 formulario.onsubmit = function(evento) {
