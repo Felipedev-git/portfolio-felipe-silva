@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Felipe de Campos Rosa da Silva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="btn-tema">Trocar Tema</button>
+    </header>
+
+    <main>
+        <section id="sobre" class="secao">
+            <h1>Sobre Mim</h1>
+            <img src="https://via.placeholder.com/150" alt="Minha Foto" class="foto-perfil">
+            <p>Olá! Meu nome é Felipe. Sou estudante da área de tecnologia e atualmente trabalho em uma empresa chamada Nova Gestões.</p>
+            <p>Estou estudando programação pois utilizo isso no meu dia a dia (sou analista de planejamento). Eu utilizo muito PYTHON no meu trabalho, então estou tendo algumas dificuldades com JS.</p>
+            <p><strong>Meus Hobbies:</strong> Gosto muito de jogar videogame e ter um tempo de qualidade com a minha esposa.</p>
+        </section>
+
+        <hr>
+
+        <section id="formacao" class="secao">
+            <h1>Formação</h1>
+            <ul>
+                <li><strong>Curso Atual:</strong> Análise e Desenvolvimento de Sistemas</li>
+                <li><strong>Cursos Extras:</strong> Python do zero ao avançado e Bootcamp de Python na DIO</li>
+                <li><strong>Idiomas:</strong> Português (Nativo), Inglês (Básico).</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="portfolio" class="secao">
+            <h1>Portfólio</h1>
+            <p>Confira alguns dos meus trabalhos abaixo:</p>
+            <ul class="projetos">
+                <li><a href="#" target="_blank">Projeto 1: Calculadora Simples em Python</a></li>
+                <li><a href="#" target="_blank">Projeto 2: Automação de Planilhas</a></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contato" class="secao">
+            <h1>Contato</h1>
+            <form id="form-contato">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="usuario@dominio.com">
+                </div>
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

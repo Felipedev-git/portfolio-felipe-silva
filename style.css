@@ -1,0 +1,121 @@
+/* Cores base para o tema claro e escuro */
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333333;
+    --header-bg: #ffffff;
+    --primary-color: #007BFF;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f4f9;
+    --header-bg: #2d2d2d;
+    --primary-color: #4da3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+/* Menu no topo da página */
+header {
+    background-color: var(--header-bg);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#btn-tema {
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Espaçamento das seções */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secao {
+    padding: 50px 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Estilizando o formulário */
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
